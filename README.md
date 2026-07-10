@@ -4,7 +4,7 @@ Site criado para ajudar uma amiga muito querida a arrecadar parte dos custos
 da chegada do bebê dela, através de uma rifa online simples e acessível
 pelo celular.
 
-🔗 **Site:** https://kathleencris.github.io/cha-rifa/
+🔗 **Site:**https://kathleencris.github.io/cha-rifa/
 
 ## O desafio
 
