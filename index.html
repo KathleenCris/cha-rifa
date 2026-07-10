@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chá Rifa | Ajude a gente a receber esse bebê com amor 💛</title>
+  <meta name="description" content="Participe da rifa e ajude a comemorar a chegada do bebê." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="hero">
+    <p class="hero__eyebrow">Chá Rifa</p>
+    <!-- EDITE: nome do bebê e/ou da mamãe -->
+    <h1 class="hero__title">Vem ajudar a receber<br />a Princesa Lavinía com carinho</h1>
+    <p class="hero__subtitle">
+      <!-- EDITE -->
+      Escolha um número, contribua com o valor abaixo e concorra ao prêmio.
+      Cada participação ajuda a preparar a chegada dessa criança tão esperada. 💛
+    </p>
+    <div class="hero__info">
+      <div class="info__item">
+        <span class="info__label">Valor por número</span>
+        <span class="info__value">R$ 20,00</span>
+        <!-- EDITE -->
+      </div>
+      <div class="info__item">
+        <span class="info__label">Sorteio em</span>
+        <span class="info__value">15/03</span>
+        <!-- EDITE -->
+      </div>
+      <div class="info__item">
+        <span class="info__label">Prêmio</span>
+        <span class="info__value"><div>R$ 100,00</div></span>
+        <!-- EDITE -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section class="how">
+    <div class="how__step">
+      <span class="how__num">1</span>
+      <p>Escolha um número disponível na grade abaixo</p>
+    </div>
+    <div class="how__step">
+      <span class="how__num">2</span>
+      <p>Faça o Pix no valor combinado</p>
+    </div>
+    <div class="how__step">
+      <span class="how__num">3</span>
+      <p>Confirme sua participação pelo WhatsApp</p>
+    </div>
+  </section>
+
+  <!-- ===== CHAVE PIX ===== -->
+  <section class="pix">
+    <p class="pix__label">Chave Pix</p>
+    <div class="pix__box">
+      <!-- EDITE: sua chave pix real -->
+      <span id="pixKey">kthleencris@gmail.com</span>
+      <button id="copyPix" class="btn btn--small">Copiar</button>
+    </div>
+  </section>
+
+  <!-- ===== GRADE DE NÚMEROS ===== -->
+  <section class="numbers">
+    <h2>Escolha seu número</h2>
+    <div class="legend">
+      <span><i class="dot dot--free"></i> Disponível</span>
+      <span><i class="dot dot--taken"></i> Já escolhido</span>
+    </div>
+    <div id="numberGrid" class="grid"></div>
+  </section>
+
+  <!-- ===== MODAL DE CONFIRMAÇÃO ===== -->
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal">
+      <button id="closeModal" class="modal__close" aria-label="Fechar">×</button>
+      <p class="modal__number">Número <span id="modalNumber"></span></p>
+      <form id="raffleForm">
+        <label>
+          Seu nome
+          <input type="text" id="guestName" required placeholder="Como podemos te chamar" />
+        </label>
+        <label>
+          Seu WhatsApp
+          <input type="tel" id="guestPhone" required placeholder="(00) 00000-0000" />
+        </label>
+        <button type="submit" class="btn btn--primary btn--full">Reservar este número</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Feito com muito carinho para ajudar nessa chegada. Obrigada por fazer parte! 💛</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
